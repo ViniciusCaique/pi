@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  <%- include('./partials/header') %>
+
+    <main>
+      <section>
+        <div class="imageTest">
+          <img src="/images/a.jpg" alt="a" justify-content: center>
+
+        </div> 
+      </section>
+          <body>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </body>
+        </div>
+    </main>
+
+  <%- include('./partials/footer') %>	
 </html>
