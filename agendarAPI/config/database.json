@@ -1,0 +1,11 @@
+{
+    "development": {
+        "username": "root",
+        "password": null,
+        "database": "pi",
+        "host": "localhost",
+        "dialect": "mysql",
+        "use_env_variable": false
+    }
+}
+
