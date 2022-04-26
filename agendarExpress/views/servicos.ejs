@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/header') %>
+
+    <main>
+      <body>
+        <p>Serviços</p>
+        <form action='/servicos' method='POST'>
+          <p>
+          <label for='desc'> Descrição : </label>
+          <textarea name='desc' id='desc' style='resize:none
+          ' width='100%'> </textarea>
+          </p>
+          <p>
+          <label for='grupo'> Grupo : </label>
+          <input type='text' name="grupo">
+          </p>
+          <p>
+          <label for='preco'> Preço : </label>
+          <input type='text' name="preco">
+          </p>
+          <p>
+          <label for='tempo'> Tempo de execução médio : </label>
+          <select name="tempo">
+            <option value="null"> </option>
+            <option value="10"> 10 minutos </option>
+            <option value="15"> 15 minutos </option>
+            <option value="20"> 20 minutos </option>
+            <option value="25"> 25 minutos </option>
+            <option value="30"> 30 minutos </option>
+          </select>
+          </p>
+          <p>
+            <button type='submit'> Salvar </button>
+            <button type='reset'> Cancelar </button>
+          </p>
+        </form>
+      </body>
+    </main>
+
+  <%- include('./partials/footer') %>	
+</html>

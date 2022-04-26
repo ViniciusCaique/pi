@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/header') %>
+
+    <main>
+      <body>
+        <p>Clientes</p>
+        <form action='/clientes' method='POST'>
+
+          <p>
+          <label for='desc'> Nome : </label>
+          <input type='text' name='name'>
+          </p>
+          <p>
+          <label for='cpf'> CPF : </label>
+          <input type='number' name="cpf">
+          </p>
+          <p>
+          <label for='ende'> Endereço : </label>
+          <input type='text' name="ende">
+          </p>
+          <p>
+          <label for='telefone'> Telefone : </label>
+          <input type='number' name="telefone">
+          </p>
+          <p>
+          <label for='email'> Email : </label>
+          <input type='email' name="email">
+          </p>
+
+          <p>
+            <button type='submit'> Salvar </button>
+            <button type='reset'> Cancelar </button>
+          </p>
+
+        </form>
+      </body>
+    </main>
+
+  <%- include('./partials/footer') %>	
+</html>

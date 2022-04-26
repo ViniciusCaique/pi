@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const caixaController = require('../controllers/caixaController')
 
-router.get('/', function (req, res) {
-  res.render('caixa')
-})
+router.get('/', caixaController.caixa);
 
 module.exports = router;

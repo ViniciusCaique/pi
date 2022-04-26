@@ -45,10 +45,24 @@ header nav ul li a:any-link{
   font-size: 16px;
 }
 
-section.imageTest img {
+header dir ul{
+  list-style: none;
+}
+
+header dir ul li a:any-link{
+  padding: 0px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.imageTest img {
   max-width: 40%;
-  justify-content: center;
-  width: 50%;
+  width: 100%;
+}
+
+.imageTest {
+  width: 100%;
+  align-items: center;
 }
 
 body p {
